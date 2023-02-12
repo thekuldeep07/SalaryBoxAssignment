@@ -19,5 +19,9 @@
     <color name="textBlue">#268eff</color>
     <color name="deepBlue">#425186</color>
     <color name="grey">#525050</color>
-    <color name="lightGrey">#F8F7F7</color>
+    <color name="lightGrey">#8F8E8E</color>
+    <color name="lightGrey2">#C1C0C0</color>
+    <color name="red">#CD3636</color>
+
+    <color name="toolbarBackGround">#ECEEFB</color>
 </resources>

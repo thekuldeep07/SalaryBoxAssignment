@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#CCECEEFB"
+    android:layout_marginTop="20dp"
+    android:padding="12dp"
+    android:gravity="top"
+    android:layout_height="450dp">
+
+    <TextView
+        android:textColor="@color/grey"
+        android:textSize="12dp"
+        android:text="\u25CF Menu items, nutritional information and prices are set directly by the restaurant."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+
+        android:textColor="@color/grey"
+        android:layout_marginTop="12dp"
+        android:textSize="12dp"
+        android:text="\u25CF Nutritional information values displayed are indicative, per serving and may vary depending on the ingredients, portion size and customizations."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:textColor="@color/grey"
+        android:layout_marginTop="12dp"
+        android:textSize="12dp"
+        android:text="\u25CF An average active adult requires 2,000 kcal energy per day, however, calorie needs may vary."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="#EC4F4F"
+            android:text="Report an issue with the menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:src="@drawable/ic_baseline_arrow_right_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/fssai"
+        android:layout_marginTop="40dp"
+        android:layout_width="40dp"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/grey"
+        android:text="Lic. No. 12721009000598"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

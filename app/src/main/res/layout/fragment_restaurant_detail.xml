@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.RestaurantDetail">
+    tools:context=".fragments.RestaurantDetail"
+    android:background="@color/white">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -21,73 +22,224 @@
             app:collapsedTitleTextAppearance="@style/collapsedBarTextStyle"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             >
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/custom_app_bar_background"
                 android:orientation="vertical"
                 android:layout_marginTop="60dp"
                 android:layout_marginHorizontal="12dp"
                 android:layout_marginBottom="12dp"
-                android:padding="24dp">
+                android:padding="12dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:text="@string/dashboard_heading"
-                    android:textColor="@android:color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold"/>
+                    android:background="@drawable/custom_app_bar_background"
+                    android:orientation="horizontal"
+                    >
 
-                <TextView
+                    <LinearLayout
+                        android:layout_weight="0.2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/restaurant_name"
+                            android:textColor="@color/black"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/restaurant_description"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"/>
+                        <TextView
+                            android:id="@+id/restaurant_address"
+                            android:textColor="@color/lightGrey"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"/>
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/stopwatch"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"/>
+
+                            <TextView
+                                android:id="@+id/delivery_time"
+                                android:layout_marginStart="2dp"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:layout_marginStart="2dp"
+                                android:text="|"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/distance"
+                                android:layout_marginStart="2dp"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/custom_app_bar_background"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/upper_rounded_corner_background"
+                            android:backgroundTint="#388E3C"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:src="@drawable/ic_baseline_star_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/lower_rounded_corner"
+                            android:backgroundTint="#FFFFFF"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/review_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:text="Reviews"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:textColor="@color/grey" />
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/dashboard_sub_title"
-                    android:textColor="@color/lightText"
-                    android:textSize="20sp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/lightGrey2"/>
 
-                    />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:height="55dp"
-                    android:background="@drawable/search_bar_background"
-                    android:drawableEnd="@drawable/search_btn"
-                    android:hint="@string/search_bar_hint"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="5dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:elevation="10dp"
-                    />
+                <LinearLayout
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:text="@string/see_brands"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/ic_baseline_arrow_right_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
             </LinearLayout>
+
+
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/tool_bar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:gravity="center"
-                app:layout_collapseMode="pin"
+                app:titleTextColor="@color/black"
                 app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+                app:layout_collapseMode="pin"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
                 >
 
-                <TextView
-                    android:id="@+id/toolbar_title"
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:ellipsize="end"
-                    android:gravity="center_vertical"
-                    android:singleLine="true"
-                    android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
 
                 <ImageView
+                    android:id="@+id/option_btn"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="end"
@@ -121,19 +273,118 @@
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/vegNonLinearlayout"
+            android:orientation="horizontal"
+            android:padding="12dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="8sp"
-            android:padding="16dp"
-            android:text="@string/dummy_text"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/veg_button"
+                android:background="@drawable/custom_button_background"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/veg_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="12sp"
+                    android:text="Veg"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/veg_cross"
+                    android:layout_marginLeft="4dp"
+                    android:visibility="gone"
+                    android:backgroundTint="@color/grey"
+                    android:background="@drawable/ic_baseline_close_24"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
 
-    </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/non_veg_button"
+                android:background="@drawable/custom_button_background"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/non_veg_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="12sp"
+                    android:text="Non-Veg"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/non_veg_cross"
+                    android:layout_marginLeft="4dp"
+                    android:backgroundTint="@color/grey"
+                    android:background="@drawable/ic_baseline_close_24"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <LinearLayout
+        android:id="@+id/fab_btn"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:padding="12dp"
+        android:background="@drawable/custom_app_bar_background"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        app:layout_anchorGravity="bottom|center">
+        <ImageView
+            android:src="@drawable/menu"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/white"
+            android:text="Menu"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
