@@ -20,10 +20,12 @@ val data: Store =
                 R.drawable.biryani_two,
                 380.0,
                 "non-veg",
-                4.5,
+                5.0,
                 "[Boneless Served with 1 Gulab Jamun & Mint Raita] In this culinary jewel from Behrouz,Tender chiken pieces are marinated with that are freshly ground and dum pukht woth aromatic rice",
                 true,
-                "Recommended"
+                "Recommended",
+                157,
+                5f
             ),
 
             Food(
@@ -35,12 +37,14 @@ val data: Store =
                 4.5,
                 "[Boneless Served with 1 Gulab Jamun & Mint Raita] In this culinary jewel from Behrouz,Tender chiken pieces are marinated with that are freshly ground and dum pukht woth aromatic rice",
                 true,
-                "Recommended"
+                "Recommended",
+                36,
+                4f
             ),
 
             Food(
                 "3",
-                "food third",
+                "Subz-E-Biryani [ Veg Dum Biryani - Serves 1]",
                 R.drawable.butter_paneer,
                 100.0,
                 "veg",
@@ -71,7 +75,7 @@ val data: Store =
                 4.5,
                 "five food",
                 false,
-                "One"
+                "Lunch"
             ),
 
             Food(
@@ -83,7 +87,7 @@ val data: Store =
                 4.5,
                 "six food",
                 false,
-                "One"
+                "Lunch"
             ),
 
             Food(
@@ -95,7 +99,7 @@ val data: Store =
                 4.5,
                 "first food",
                 false,
-                "One"
+                "Lunch"
             ),
 
             Food(
@@ -107,7 +111,7 @@ val data: Store =
                 4.5,
                 "second food",
                 false,
-                "One"
+                "Lunch"
             ),
 
             Food(
@@ -375,3 +379,33 @@ val data: Store =
             )
         )
     )
+
+
+val viewPagerData = listOf(
+    ViewPagerData(
+        R.drawable.gift,
+        "Free Falafel-E-Khaas (12Pcs)",
+        "above ₹848| No code required"
+    ),
+
+    ViewPagerData(
+        R.drawable.offer,
+        "50% OFF up to ₹100",
+        "use code TRYNEW | above ₹149"
+    ),
+    ViewPagerData(
+        R.drawable.scooter,
+        "Free Delivery",
+        "above ₹1000"
+    ),
+
+    ViewPagerData(
+        R.drawable.offer,
+        "Flat 15% OFF",
+        "use code SAVEBIG |  above ₹1000"
+    )
+
+
+
+
+)

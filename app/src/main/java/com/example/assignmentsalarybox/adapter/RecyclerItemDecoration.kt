@@ -67,6 +67,7 @@ class RecyclerItemDecoration(
 
     }
 
+
     private fun drawHeader(c: Canvas, child: View, headerView: View?) {
         c.save()
         if (sticky) {

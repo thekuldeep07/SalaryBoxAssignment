@@ -1,8 +1,7 @@
 package com.example.assignmentsalarybox
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -22,158 +22,168 @@
             app:collapsedTitleTextAppearance="@style/collapsedBarTextStyle"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             >
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_app_bar_background"
                 android:orientation="vertical"
-                android:layout_marginTop="60dp"
-                android:layout_marginHorizontal="12dp"
-                android:layout_marginBottom="12dp"
-                android:padding="12dp"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/custom_app_bar_background"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="vertical"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:padding="12dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
                     <LinearLayout
-                        android:layout_weight="0.2"
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/restaurant_name"
-                            android:textColor="@color/black"
-                            android:textSize="24sp"
-                            android:textStyle="bold"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                        <TextView
-                            android:id="@+id/restaurant_description"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"/>
-                        <TextView
-                            android:id="@+id/restaurant_address"
-                            android:textColor="@color/lightGrey"
-                            android:textSize="12sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"/>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_app_bar_background"
+                        android:orientation="horizontal"
+                        >
 
                         <LinearLayout
-                            android:gravity="center_vertical"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="4dp"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
-                            <ImageView
-                                android:src="@drawable/stopwatch"
-                                android:layout_width="14dp"
-                                android:layout_height="14dp"/>
-
                             <TextView
-                                android:id="@+id/delivery_time"
-                                android:layout_marginStart="2dp"
-                                android:textStyle="bold"
-                                android:textSize="12sp"
+                                android:id="@+id/restaurant_name"
                                 android:textColor="@color/black"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
-                            <TextView
-                                android:layout_marginStart="2dp"
-                                android:text="|"
+                                android:textSize="24sp"
                                 android:textStyle="bold"
-                                android:textSize="12sp"
-                                android:textColor="@color/grey"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
 
                             <TextView
-                                android:id="@+id/distance"
-                                android:layout_marginStart="2dp"
-                                android:textStyle="bold"
-                                android:textSize="12sp"
+                                android:id="@+id/restaurant_description"
                                 android:textColor="@color/black"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
-
-
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_marginTop="4dp"
-                        android:layout_weight="0.8"
-                        android:background="@drawable/custom_app_bar_background"
-                        android:gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp">
-
-                        <LinearLayout
-                            android:orientation="horizontal"
-                            android:layout_weight="0.5"
-                            android:background="@drawable/upper_rounded_corner_background"
-                            android:backgroundTint="#388E3C"
-                            android:gravity="center"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <TextView
-                                android:id="@+id/rating"
+                                android:textSize="12sp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:textSize="20sp"
-                                android:textColor="@color/white" />
-
-                            <ImageView
-                                android:src="@drawable/ic_baseline_star_24"
+                                android:layout_marginTop="4dp"/>
+                            <TextView
+                                android:id="@+id/restaurant_address"
+                                android:textColor="@color/lightGrey"
+                                android:textSize="12sp"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"/>
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/stopwatch"
+                                    android:layout_width="14dp"
+                                    android:layout_height="14dp"/>
+
+                                <TextView
+                                    android:id="@+id/delivery_time"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:layout_marginStart="2dp"
+                                    android:text="|"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/grey"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:id="@+id/distance"
+                                    android:layout_marginStart="2dp"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+
+
+
+                            </LinearLayout>
+
+
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:orientation="vertical"
-                            android:layout_weight="0.5"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/custom_app_bar_background"
+                            android:gravity="center"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/lower_rounded_corner"
-                            android:backgroundTint="#FFFFFF"
-                            android:gravity="center">
+                            android:layout_height="80dp">
 
-                            <TextView
-                                android:id="@+id/review_count"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/upper_rounded_corner_background"
+                                android:backgroundTint="#388E3C"
                                 android:gravity="center"
-                                android:textSize="14sp"
-                                android:textColor="@color/black" />
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
-                            <TextView
-                                android:text="Reviews"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:textSize="12sp"
-                                android:textColor="@color/grey" />
+                                <TextView
+                                    android:id="@+id/rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="20sp"
+                                    android:textColor="@color/white" />
+
+                                <ImageView
+                                    android:src="@drawable/star_fill"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="0.5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/lower_rounded_corner"
+                                android:backgroundTint="#FFFFFF"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/review_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:text="Reviews"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/grey" />
+
+
+
+
+                            </LinearLayout>
+
+
 
 
 
@@ -183,44 +193,119 @@
 
 
 
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/lightGrey2"/>
 
 
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="@string/see_brands"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <ImageView
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_baseline_arrow_right_24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
 
 
-
-
                 </LinearLayout>
+                <androidx.cardview.widget.CardView
 
-                <View
                     android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_marginTop="6dp"
-                    android:background="@color/lightGrey2"/>
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    android:backgroundTint="@color/white"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        >
+                        <RelativeLayout
+                            android:id="@+id/viewpagerImgcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/viewpagerimgback"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            >
 
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/viewpagerImg"
+                                android:layout_width="55dp"
+                                android:layout_height="65dp"
+                                android:src="@drawable/arhar_dal"
+                                android:contentDescription="there"
+                                android:scaleType="centerCrop"
+                                app:shapeAppearance="@style/ShapeAppearanceOverlay.App.Cornersize10percent"
+                                />
+                        </RelativeLayout>
 
-                <LinearLayout
-                    android:layout_marginTop="6dp"
-                    android:layout_width="wrap_content"
-                    android:gravity="center_vertical"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textSize="12dp"
-                        android:textColor="@color/black"
-                        android:text="@string/see_brands"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <ImageView
-                        android:layout_marginTop="1dp"
-                        android:src="@drawable/ic_baseline_arrow_right_24"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
+                        <com.asksira.loopingviewpager.LoopingViewPager
+                            android:id="@+id/viewPager"
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            app:isInfinite="true"
+                            app:autoScroll="true"
+                            app:scrollInterval="3000"
+                            android:layout_marginStart="10dp"
+                            app:layout_constraintLeft_toRightOf="@+id/viewpagerImgcard"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
 
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/viewPager"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/currentPos"
+                                android:text="1/4"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/pageindicatorimg"
+                                android:layout_width="20dp"
+                                android:layout_height="5dp"
+                                android:src="@drawable/middle_img"
+                                />
+
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
+
+
+
+
+
 
 
 
@@ -273,6 +358,8 @@
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
 
         <LinearLayout
             android:id="@+id/vegNonLinearlayout"

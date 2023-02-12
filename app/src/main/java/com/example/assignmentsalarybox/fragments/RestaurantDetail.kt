@@ -1,9 +1,7 @@
 package com.example.assignmentsalarybox.fragments
 
-import android.graphics.Rect
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,22 +10,29 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.asksira.loopingviewpager.LoopingViewPager
 import com.example.assignmentsalarybox.R
 import com.example.assignmentsalarybox.adapter.RecyclerItemDecoration
 import com.example.assignmentsalarybox.adapter.RecyclerViewAdapter
+import com.example.assignmentsalarybox.adapter.ViewPagerAdapter
 import com.example.assignmentsalarybox.data.Store
+import com.example.assignmentsalarybox.data.viewPagerData
 import com.example.assignmentsalarybox.mvvm.ViewModel
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.imageview.ShapeableImageView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class RestaurantDetail : Fragment() {
     val viewModel: ViewModel by activityViewModels()
+    var hr_viewPager : LoopingViewPager? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -64,12 +69,24 @@ class RestaurantDetail : Fragment() {
         val optionBtn : ImageView = view.findViewById(R.id.option_btn)
         val vegCross :ImageView = view.findViewById(R.id.veg_cross)
         val nonVegCross :ImageView = view.findViewById(R.id.non_veg_cross)
+        hr_viewPager = view.findViewById(R.id.viewPager)
+        val hr_imageView : ShapeableImageView = view.findViewById(R.id.viewpagerImg)
+        val hr_pageIndicator : ImageView = view.findViewById(R.id.pageindicatorimg)
+        val hr_curpos : TextView = view.findViewById(R.id.currentPos)
+
         var vegFlag = false
         var nonVegFlag = false
+
+
+
+
 
         val adapter = RecyclerViewAdapter(
             this.requireContext()
         )
+
+        val hr_adapter = ViewPagerAdapter(hr_pageIndicator, hr_imageView, hr_curpos,
+            li = viewPagerData)
 
 
 
@@ -77,6 +94,8 @@ class RestaurantDetail : Fragment() {
 
         recyclerView.layoutManager = LinearLayoutManager(this.requireContext())
         recyclerView.adapter = adapter
+
+        hr_viewPager?.adapter = hr_adapter
 
         toolbar.title = ""
         collapsingToolbar.isTitleEnabled = false
@@ -148,7 +167,7 @@ class RestaurantDetail : Fragment() {
 
             override fun onOffsetChanged(appBarLayout: AppBarLayout, verticalOffset: Int) {
                 Log.d("sa", verticalOffset.toString())
-                if (verticalOffset <= -329)
+                if (verticalOffset <= -690)
                     view.findViewById<LinearLayout>(R.id.vegNonLinearlayout)
                         .setBackgroundResource(R.color.white)
                 else {
@@ -209,6 +228,16 @@ class RestaurantDetail : Fragment() {
             }
 
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        hr_viewPager?.pauseAutoScroll()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        hr_viewPager?.resumeAutoScroll()
     }
 
 }

@@ -1,11 +1,11 @@
 package com.example.assignmentsalarybox.adapter
 
 import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.assignmentsalarybox.R
@@ -51,6 +51,12 @@ class RecyclerViewAdapter(
             holder.typeImageIcon.setImageResource(if (dataMap.type == "veg") R.drawable.veg_icon else R.drawable.non_veg_icon)
             holder.bestSellerIcon.visibility =
                 if (dataMap.bestSellerFlag == true) View.VISIBLE else View.INVISIBLE
+
+            holder.rating.rating = dataMap.ratingStars
+
+
+
+
         } else if (holder is FooterViewHolder) {
         }
 
@@ -71,6 +77,7 @@ class RecyclerViewAdapter(
         var foodImage: ImageView
         var bestSellerIcon: TextView
         var foodDescription: TextView
+        var rating:RatingBar
 
         init {
             food_name = itemView.findViewById<View>(R.id.food_name) as TextView
@@ -79,6 +86,10 @@ class RecyclerViewAdapter(
             bestSellerIcon = itemView.findViewById<View>(R.id.bestSellerIcon) as TextView
             foodDescription = itemView.findViewById<View>(R.id.food_description) as TextView
             foodImage = itemView.findViewById<View>(R.id.food_image) as ImageView
+            rating = itemView.findViewById(R.id.ratingBar) as RatingBar
+
+
+
         }
     }
 
