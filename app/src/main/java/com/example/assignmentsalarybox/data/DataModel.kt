@@ -32,351 +32,201 @@ val data: Store =
                 "2",
                 "Spicy Zaikedaar Paneer [ Hyedrabadi Paneer Dum Biryani serves 2]",
                 R.drawable.biryani_one,
-                634.0,
+                350.0,
                 "veg",
                 4.5,
-                "[Boneless Served with 1 Gulab Jamun & Mint Raita] In this culinary jewel from Behrouz,Tender chiken pieces are marinated with that are freshly ground and dum pukht woth aromatic rice",
+                "[ Served with 1 Gulab Jamun & Mint Raita] In this extravagant dish, soft & crumbly, fresh paneer is marinated with exquisite royal spices & layered with basmati  to create a dish that is as delectable as it is extravagant",
                 true,
                 "Recommended",
-                36,
-                4f
+                82,
+                4.5f
             ),
 
             Food(
                 "3",
                 "Subz-E-Biryani [ Veg Dum Biryani - Serves 1]",
                 R.drawable.butter_paneer,
-                100.0,
+                310.0,
                 "veg",
-                4.5,
-                "third food",
+                4.0,
+                "[Served with 1 Gulab Jamun & Mint Raita] Adorned with fresh vegetables, golden-hued long-grain basmati, & the covered Behrouz spice mix, this dish will lend you an experience unlike any other",
                 false,
-                "Recommended"
+                "Recommended",
+                45,
+                4f
             ),
 
             Food(
                 "4",
-                "food fourth",
+                "Dum Gosht [Mutton Dum Briyani - Boneless - Serves 1]",
                 R.drawable.kadai_paneer,
-                100.0,
-                "veg",
-                4.5,
-                "fourth food",
+                504.0,
+                "non-veg",
+                3.5,
+                "[Boneless, served with 1 Gulab Jamun & Mint Raita] In this most enigmatic & treasured recipe of Behrouz, immaculately spiced fresh, succlent mutton pieces are layered with basmati & then slow-cooked on a charcoal fire.",
                 false,
-                "Recommended"
+                "Shahi Briyani(Serves 1)",
+                48,
+                3.5f
+
             ),
 
             Food(
                 "5",
-                "food five",
+                "Murgh Afghani Tikka (Creamy Chicken Tikka Dum Briyani - Serves 1)",
                 R.drawable.biryani_two,
-                100.0,
+                390.0,
                 "non-veg",
                 4.5,
-                "five food",
-                false,
-                "Lunch"
+                "[Boneless, Served with 1 Gulab Jamun & Mint Raita] Legendary for its rich taste & creamy texture, tender chicken marinated in fresh creamy yoghurt & spices is layered with aromatic basmati. Let your tastebuds feel enchanted!",
+                true,
+                "Shahi Briyani(Serves 1)",
+                29,
+                4.5f
             ),
 
             Food(
                 "6",
-                "food six",
+                "Zaitooni Paneer Dum Briyani ( Veg Paneer Dum Biryani - Serves 1)",
                 R.drawable.dal_makhani,
-                100.0,
+                360.0,
                 "veg",
-                4.5,
-                "six food",
+                4.0,
+                "[Served with 1 Gulab Jamun & Mint Raita] Roasted exotic Vegetables are added along with exquisite soft marinated paneer & dum pukht with long grain basmati rice. This Zaitooni Paneer biryani is crafted with finesse to mesmerize your taste buds",
                 false,
-                "Lunch"
+                "Shahi Briyani(Serves 1)",
+                36,
+                4f
             ),
 
             Food(
-                "1",
-                "food one",
+                "7",
+                "Falafel-E-Khaas with Thums Up (250ml)",
                 R.drawable.mutton_kasha,
                 100.0,
-                "non-veg",
-                4.5,
-                "first food",
+                "veg",
+                3.0,
+                "[12pcs Falafel shots + Thums Up] Delectable shallow fried chickpea nuggets with a blend of aromatic spices served with Thums Up ",
                 false,
-                "Lunch"
+                "Dastaan-E-Kebab (20)",
+                10,
+                3f
             ),
 
             Food(
-                "2",
-                "food two",
+                "8",
+                "Murgh Koobideh (Chicken Tikki Kebab) (5 Pcs)",
                 R.drawable.butter_paneer,
-                100.0,
-                "veg",
-                4.5,
-                "second food",
-                false,
-                "Lunch"
+                125.0,
+                "non-veg",
+                4.0,
+                "5 pcs, Ground chicken flavored with cardamom & chilli and grilled to perfection.",
+                true,
+                "Dastaan-E-Kebab",
+                32,
+                4f
             ),
 
             Food(
-                "3",
-                "food third",
+                "9",
+                "Gosht-E-Galouti Kebab (Mutton Galouti Kebab) (6 Pcs)",
                 R.drawable.kadai_paneer,
-                100.0,
-                "veg",
-                4.5,
-                "third food",
+                419.0,
+                "non-veg",
+                2.5,
+                "A melt-in-mouth culinary delicacy it can take the most enigmatic feasts a notch above. Tenderest mutton is minced to perfection & cooked with delicate spices to offer you a truly exquisite culinary experience.",
                 false,
-                "two"
+                "Dastaan-E-Kebab",
+                6,
+                2.5f
             ),
 
             Food(
-                "4",
-                "food fourth",
+                "10",
+                "Murgh Tikka ( Chicken Tikka Dum Briyani - Serves-2)",
                 R.drawable.achari_chole,
-                100.0,
-                "veg",
-                4.5,
-                "fourth food",
+                739.0,
+                "non-veg",
+                3.5,
+                "[Boneless, Served with 2 Gulab Jamun & Mint Raita] An exquisitely curated chicken biryani adorned with boneless chicken tikka, marinated with the choicest spices & paired alongside long-grain basmati rice.",
                 false,
-                "two"
+                "Shaan Briyani (Serves 2)",
+                5,
+                3.5f
             ),
 
             Food(
-                "5",
-                "food five",
+                "11",
+                "Paneer Subz ( Classic Paneer and Veg Dum Briyani - Serves 2)",
                 R.drawable.mutton_korma,
-                100.0,
-                "non-veg",
-                4.5,
-                "five food",
-                false,
-                "two"
-            ),
-
-            Food(
-                "6",
-                "food six",
-                R.drawable.veg_thali,
-                100.0,
+                609.0,
                 "veg",
                 4.5,
-                "six food",
-                false,
-                "two"
+                "[Served with 2 Gulab Jamuns & Mint Raita] In this immaculately balanced culinary masterpiece, diced fresh vegetables infused with succulent pieces of spiced paneer are layered on a bed of aromatic rice.",
+                true,
+                "Shaan Briyani (Serves 2)",
+                120,
+                4.5f
+
             ),
 
             Food(
-                "1",
-                "food one",
+                "12",
+                "Tokhm-E-Briyani ( Classic Egg Dum Biryani - Serves 2)",
+                R.drawable.veg_thali,
+                579.0,
+                "non-veg",
+                2.0,
+                "[Served with 2 Gulab Jamuns & Mint Raita] Subtle flavours of hand-boiled eggs are adorned with exuberant spices & let to cook in its full glory with basmati rice.",
+                false,
+                "Shaan Briyani (Serves 2)",
+                4,
+                2f
+            ),
+
+            Food(
+                "13",
+                "Lazeez Bhuna Murgh [ Chicken Dum Briyani Boneless - Serves 4]",
                 R.drawable.butter_chicken_one,
-                100.0,
+                1249.0,
                 "non-veg",
-                4.5,
-                "first food",
-                false,
-                "three"
+                5.0,
+                "[Boneless, Served with 4 Gulab Jamuns & Mint Raita] In this culinary jewel from Behrouz, Tender chicken pieces are marinated with exuberant bhuna spices that are freshly ground and dum pukht with aromatic rice.",
+                true,
+                "Alishaan Briyani (Serves 4)",
+                15,
+                5f
             ),
 
             Food(
-                "2",
-                "food two",
+                "14",
+                "Do Gosht ki Dum Biryani (Mutton & Chicken Dum Briyani Serves 4)",
                 R.drawable.veg_thali,
-                100.0,
-                "veg",
-                4.5,
-                "second food",
+                1589.0,
+                "non-veg",
+                3.5,
+                "[Boneless, Served with 4 Gulab Jamuns & Mint Raita] Tantalise your tastebuds with this epicurean delight of succulent chicken & mutton pieces marinated in aromatic spices and dum-pukht with long-grain basmati.",
                 false,
-                "three"
+                "Alishaan Briyani (Serves 4)",
+                5,
+                3.5f
             ),
 
             Food(
-                "3",
-                "food third",
+                "15",
+                "Subz-E-Briyani [ Veg Dum Briyani - Serves 4]",
                 R.drawable.dal_makhani,
-                100.0,
+                999.0,
                 "veg",
-                4.5,
-                "third food",
-                false,
-                "three"
+                4.0,
+                "[Served with 4 Gulab Jamuns & Mint Raita] Adorned with fresh vegetables, golden-hued long-grain basmati, & the coveted Behrouz spice mix, this dish will lend you an experience unlike any other.",
+                true,
+                "Alishaan Briyani (Serves 4)",
+                50,
+                4f
             ),
 
-            Food(
-                "4",
-                "food fourth",
-                R.drawable.chana_masala,
-                100.0,
-                "veg",
-                4.5,
-                "fourth food",
-                false,
-                "three"
-            ),
 
-            Food(
-                "5",
-                "food five",
-                R.drawable.biryani_one,
-                100.0,
-                "non-veg",
-                4.5,
-                "five food",
-                false,
-                "four"
-            ),
-
-            Food(
-                "6",
-                "food six",
-                R.drawable.arhar_dal,
-                100.0,
-                "veg",
-                4.5,
-                "six food",
-                false,
-                "four"
-            ),
-
-            Food(
-                "1",
-                "food one",
-                R.drawable.mutton_korma,
-                100.0,
-                "non-veg",
-                4.5,
-                "first food",
-                false,
-                "four"
-            ),
-
-            Food(
-                "2",
-                "food two",
-                R.drawable.arhar_dal,
-                100.0,
-                "veg",
-                4.5,
-                "second food",
-                false,
-                "four"
-            ),
-
-            Food(
-                "3",
-                "food third",
-                R.drawable.arhar_dal,
-                100.0,
-                "veg",
-                4.5,
-                "third food",
-                false,
-                "five"
-            ),
-
-            Food(
-                "4",
-                "food fourth",
-                R.drawable.veg_thali,
-                100.0,
-                "veg",
-                4.5,
-                "fourth food",
-                false,
-                "five"
-            ),
-
-            Food(
-                "5",
-                "food five",
-                R.drawable.biryani_one,
-                100.0,
-                "non-veg",
-                4.5,
-                "five food",
-                false,
-                "five"
-            ),
-
-            Food(
-                "6",
-                "food six",
-                R.drawable.butter_chicken_one,
-                100.0,
-                "veg",
-                4.5,
-                "six food",
-                false,
-                "five"
-            ),
-
-            Food(
-                "1",
-                "food one",
-                R.drawable.butter_chicken_two,
-                100.0,
-                "non-veg",
-                4.5,
-                "first food",
-                false,
-                "six"
-            ),
-
-            Food(
-                "2",
-                "food two",
-                R.drawable.veg_thali,
-                100.0,
-                "veg",
-                4.5,
-                "second food",
-                false,
-                "six"
-            ),
-
-            Food(
-                "3",
-                "food third",
-                R.drawable.butter_paneer,
-                100.0,
-                "veg",
-                4.5,
-                "third food",
-                false,
-                "six"
-            ),
-
-            Food(
-                "4",
-                "food fourth",
-                R.drawable.chana_masala,
-                100.0,
-                "veg",
-                4.5,
-                "fourth food",
-                false,
-                "six"
-            ),
-
-            Food(
-                "5",
-                "food five",
-                R.drawable.butter_chicken_one,
-                100.0,
-                "non-veg",
-                4.5,
-                "five food",
-                false,
-                "seven"
-            ),
-
-            Food(
-                "6",
-                "food six",
-                R.drawable.kadai_paneer,
-                100.0,
-                "veg",
-                4.5,
-                "six food",
-                false,
-                "seven"
-            )
         )
     )
 
